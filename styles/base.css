@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+body {
+    font-family: "Playwrite DE Grund", system-ui;
+    font-optical-sizing: auto;
+    margin: 50px;
+  }
+
+#title {
+    display: flex;
+    text-align: center;
+    background: rgb(58, 58, 92);
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(233, 235, 96);
+    margin: 0px;
+
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    background: rgb(156, 156, 235);
+    padding: 10px;
+    margin-top: 0px;
+   
+   
+}
+
+a {
+    text-decoration: none;
+    color: rgb(4, 5, 12);
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    grid-template-columns: 950px 550px;
+    
+}
+
+.card{
+    border-color: black;
+    border-style: outset;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+
+.image1 {
+    display: flex;
+    position: relative;
+    float: right;
+    bottom: 100px;
+
+}
+
+
+h2  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgb(156, 156, 235);
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
