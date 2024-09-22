@@ -2,7 +2,6 @@
 
 body {
     font-family: "Playwrite DE Grund", system-ui;
-    font-optical-sizing: auto;
     margin: 50px;
   }
 
@@ -84,12 +83,10 @@ h2  {
     height: auto;
     float: left;
     padding: 10px;
+    
 
 }
-figcaption {
-    font-style: italic;
-    text-align: center;
-}
+
 
 h3 {
     display: flex;
