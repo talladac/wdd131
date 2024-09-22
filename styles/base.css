@@ -43,14 +43,14 @@ a {
     background: rgb(40, 43, 43);
     border-radius: 5px;
     color: rgb(242, 242, 210);
-    max-width: auto;
+    
 }
 main {
     display: grid;
     margin: auto;
     justify-content: center;
     grid-template-columns: 950px 550px;
-    
+    max-width: auto;
     
 }
 
