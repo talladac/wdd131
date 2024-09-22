@@ -40,10 +40,10 @@ a {
 
 }
 
-.links :hover {
-    background: rgb(40, 43, 43);
+:hover {
+    
     border-radius: 5px;
-    color: rgb(242, 242, 210);
+ 
     
 }
 main {
