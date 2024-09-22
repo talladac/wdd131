@@ -34,13 +34,23 @@ a {
     text-decoration: none;
     color: rgb(4, 5, 12);
     font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    font-size: larger;
+
 }
 
+nav :hover {
+    background: rgb(40, 43, 43);
+    border-radius: 5px;
+    color: rgb(242, 242, 210);
+}
 main {
     display: grid;
     margin: auto;
     justify-content: center;
     grid-template-columns: 950px 550px;
+    
     
 }
 
@@ -53,11 +63,11 @@ main {
 
 
 .image1 {
-    display: flex;
-    position: relative;
+    
+    height: auto;
     float: right;
-    bottom: 100px;
-
+    padding: 10px;
+   
 }
 
 
@@ -70,3 +80,53 @@ h2  {
     margin-top: 0%;
 }
 
+.image2 {
+    height: auto;
+    float: left;
+    padding: 10px;
+
+}
+figcaption {
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    display: flex;
+    border-bottom: solid ;
+    border-radius: 50px;
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+p{
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul  {
+    align-items: center;
+    padding-top: 100px;
+}
+
+ul :hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+footer {
+   
+    text-align: center;
+    background: rgb(58, 58, 92);
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(233, 235, 96);
+    margin: 0px;
+
+}
