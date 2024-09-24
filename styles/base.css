@@ -41,7 +41,7 @@ a {
 
 }
 
-nav :hover {
+nav a:hover {
     
     color: rgb(245, 245, 21);
     
