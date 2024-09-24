@@ -2,7 +2,7 @@
 
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Playwrite DE Grund", system-ui;
     margin: 50px;
   }
 
@@ -16,7 +16,7 @@ body {
     justify-content: center;
     color: rgb(233, 235, 96);
     margin: 0px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 
 }
 
@@ -42,7 +42,8 @@ a {
 }
 
 .links :hover {
-    color: rgb(241, 241, 20);
+    
+    color: rgb(245, 245, 21);
     
 }
 main {
@@ -67,7 +68,7 @@ main {
     height: auto;
     float: right;
     padding: 10px;
-    
+    max-width: 100%;
    
 }
 
