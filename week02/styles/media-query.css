@@ -1,0 +1,38 @@
+body {
+    font-family: Roboto;
+}
+
+h1, .box1, .box2{
+    max-width: 640px;
+    align-content: center;
+    margin: 1 rem auto;
+    border: 1px;
+    padding: 10px;
+    background-color: rgb(235, 250, 250);
+    align-items: center;
+    border-color: rgb(166, 166, 250);
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+    
+
+header {
+    display: grid;
+    justify-content: center;
+    
+}
+
+footer{
+    
+    text-align: center;
+   
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(12, 12, 10);
+    margin: 0px;
+}
