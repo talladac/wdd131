@@ -1,4 +1,4 @@
-*{
+:root{
     box-sizing: border-box;
 }
 body {
@@ -28,14 +28,6 @@ main {
 
 }
 
-nav:hover {
-    cursor: pointer;
-}
-
-nav ul {
-    text-decoration: none;
-    list-style: none;
-}
 
 nav ul li {
     display: none;
@@ -49,6 +41,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+    cursor: pointer;
     color: rgb(10, 166, 238);
 }
 
@@ -63,6 +56,7 @@ nav::before {
     content: "☰";
     color: rgb(233, 235, 96);
     font-size: 40px;
+    cursor: pointer;
 }
 
 nav.show::before {
