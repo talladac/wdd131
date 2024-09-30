@@ -1,3 +1,4 @@
+
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();
 
 document.getElementById("lastmodified").textContent = new Date(document.lastModified);
@@ -5,7 +6,7 @@ document.getElementById("lastmodified").textContent = new Date(document.lastModi
 
 // Burger code
 const ham = document.querySelector('nav');
-const list = document.getElementById("navigation");
+const list = document.getElementById("list");
 
 ham.addEventListener('click', ()=>{
     list.classList.toggle('show');
