@@ -1,0 +1,87 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(233, 235, 96);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(58, 58, 92);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+nav:hover {
+    cursor: pointer;
+}
+
+nav ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul li {
+    display: none;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: rgb(233, 235, 96);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+nav ul li a:hover {
+    color: rgb(10, 166, 238);
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+    
+}
+
+nav::before {
+    content: "☰";
+    color: rgb(233, 235, 96);
+    font-size: 40px;
+}
+
+nav.show::before {
+    content: "❌";
+    color: rgb(233, 235, 96);
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+.show li {
+    display: block;
+}
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+main {
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+}
+
+footer{
+    background: rgb(58, 58, 92);
+    text-align: center;
+    color: rgb(233, 235, 96);
+    padding: 10px;
+    font-size: 15px;
+}
