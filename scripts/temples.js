@@ -1,10 +1,10 @@
-
+// Footer date code
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();
 
 document.getElementById("lastmodified").textContent = new Date(document.lastModified);
 
 
-// Burger code
+// Hamburger code
 const ham = document.querySelector('nav');
 const list = document.getElementById("list");
 
@@ -13,8 +13,8 @@ ham.addEventListener('click', ()=>{
     ham.classList.toggle('show');
 })
 
-// Main header code
 
+// Codes for Menu list
 const home = document.getElementById("home");
 const old = document.getElementById("old");
 const newer = document.getElementById("new");
