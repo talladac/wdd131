@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Dynamic Web Fundamentals | Carina F. Tallada </title>
+    <meta name="author" content="Carina F. Tallada">
+    <meta name="description" content="Place Assignment for Week 04">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Oman</h1>
+        <div>
+            <picture class="hero">
+                <source srcset="images/oryx-large.webp" media="(min-width: 501px)">
+                <source srcset="images/oryx-small.webp" media="(max-width: 500px)">
+                <img src="images/oryx-small.webp" alt="Oryx Oman National">
+            </picture>
+        </div>
+    </header>
+    <main>
+        <div class="data">
+            <h2>Data</h2>
+            <ul id="list">
+                <li> <strong>Area:</strong> 309. 500 sq km</li>
+                <li><strong>Population:</strong> 4,520,471</li>
+                <li><strong>Capital:</strong> Muscat</li>
+                <li><strong>Languages:</strong> Arabic</li>
+                <li><strong>Currency:</strong> Omani Rial (OMR)</li>
+                <li><strong>Time Zone:</strong> UTC+4 (GST)</li>
+                <li><strong>Calling Code:</strong> +968</li>
+                <li><strong>Internet TLD:</strong> .om</li>
+            </ul>
+        </div>
+        <div class="weather">
+            <h3>Weather</h3>
+            <img id="sun" src="images/1530387_weather_morning_sun_sunrise_icon.svg" alt="weather icon">
+            <ul id="datalist">
+                <li><strong>Temperature:</strong> <span id="temp">30</span>°C</li>
+                <li><strong>Conditions:</strong> Clear</li>
+                <li><strong>Wind:</strong> <span id="wind">9</span>km/h</li>
+                <li><strong> Wind Chill</strong> <span id="chill"></span>°C</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"> </span>🍋Carina F. Tallada🍋 Oman</p>
+        <p>Last Modification: <span id="lastmod"></span></p>
+    </footer>
+
+</body>
+
+</html>
