@@ -1,0 +1,30 @@
+@media screen and (min-width: 900px) {
+ 
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px;
+    }
+
+    nav::before{
+        display: none;
+    }
+    nav a::after{
+        color:blue;
+    }
+
+    nav ul li{
+        display: block;
+        padding: 5px 20px;
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

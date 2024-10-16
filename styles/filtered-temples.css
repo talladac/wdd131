@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: Georgia;
     max-width: 980px;
     margin: 0 auto;
 }
@@ -61,15 +61,16 @@ nav ul li:hover {
 
 }
 .temple-card{
-    display: flex;
+    display: grid;
     flex-direction: column;
+    gap: 1rem;
     text-align: center;
-    background: rgb(58, 58, 92);
+    background: rgb(222, 222, 243);
     border: 1px solid #ddd;
     border-radius: 8px;
     margin: 15px;
     padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
     transition: transform 0.2s;
     max-width: 400px;
     margin-left: auto;
@@ -79,6 +80,14 @@ nav ul li:hover {
 .temple-card:hover{
     transform: scale(1.02);
 }
+
+.temple-image{
+   
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8);
+
+}
+
 
 nav::before {
     content: "☰";
@@ -111,108 +120,3 @@ footer {
     font-size: 15px;
 }
 
-
-/* Media Query for Mobile View */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2rem;
-        color: #fff;
-        margin: 0;
-    }
-    
-    h2 {
-        color: #460646;
-        margin: 1rem 0;
-        text-align: center;
-    }
-
-    main {
-        grid-template-columns: 1fr;
-    } 
-
-    header {
-        background-color: purple;
-    }
-
-    .temple-card {
-        margin: 10px;
-    }
-
-    .gallery {
-        margin: 1rem;
-    }
-
-    /* Hamburger Menu */
-    #menu {
-        display: block;
-        font-size: 2rem;
-        font-weight: 400;
-        cursor: pointer;
-        text-decoration: none;
-        padding: 0.5rem 0.75rem;
-        background-color: purple;
-        border: 0;
-        color: #fff;
-        position: relative;
-        right: 1rem;
-    }
-    
-    #menu:hover {
-        background-color: rgba(223, 154, 220, 0.5);
-    }
-    
-    /* Hamburger Icon */
-    #menu::before {
-        content: "☰"; 
-    }
-    
-    #menu.open::before {
-        content: "X";
-    }
-
-    .navigation {
-        background-color: #E6E6FA;
-        flex-direction: column;
-        color: #fff;
-        top: 100px;
-        right: 0;
-        padding: .5rem 2rem;
-        position: absolute;
-        width: 35%;
-    }
-
-    /* Hide links by default */
-    .navigation li {
-        display: none;
-    }
-
-    nav a {
-        padding: 1rem;
-        text-decoration: none;
-        color: #000;
-        font-size: 1rem;
-        font-weight: 600;
-        transition: 0.3s;
-    }
-    
-    nav a:visited {
-        color: midnightblue;
-    }
-    
-    nav a:hover:visited {
-        color: #36454f;
-    }    
-
-    nav a:hover{
-        color: navy;
-    }
-
-    /* Show links when menu is open */
-    .open li {
-        display: block;
-    }
-
-    footer {
-        background-color: purple;
-    }
-}
