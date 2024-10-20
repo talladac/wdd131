@@ -38,8 +38,6 @@ img {
 #sun {
     width: 20%;
     margin: 0;
-    
-
 
 }
 
@@ -74,59 +72,4 @@ footer{
     font-size: 15px;
     
     
-}
-
-
-@media screen and (min-width: 740px){
-
-    main {
-        position: relative;
-    }
-    h2{
-        background: var(--back);
-        color: var(--font-color);
-        padding: 0;
-
-    }
-
-    .data, .weather{
-        position:absolute;
-        background: var(--back-second);
-        color: rgb(5, 5, 3);
-        padding: 5px;
-        position: relative;
-
-    }
-
-    .data{
-        float: left;
-        top: -500px;
-        left: 20px;
-    }
-    
-    li{
-        padding: 10px;
-
-       
-    }
-
-    .weather{
-        
-        
-        float: right;
-        bottom: 300px;
-        right: 20px;
-
-    }
-
-    h3{
-        background: rgb(58, 58, 92);
-        color: rgb(233, 235, 96);
-        padding: 0;
-
-    }
-
-    #sun::after{
-        color: yellow;
-    }
 }
