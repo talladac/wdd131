@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form  |   WDD 131 Dynamic Web Fundamentals  |  Carina F Tallada</title>
+    <meta name="author" content="Carina F. Tallada">
+    <meta name="description" content="Week 05 Assignment: Product Review Form ">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/agEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous"referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    
+    <main>
+        <form method="get" action="review.html" class="form">
+            <label> id="pname">Product Name*
+                <select name="product" id="productid" required>
+                    <option disabled selected>Choose a Product... &#9662;</option>
+                </select>
+            </label>
+            <div>Overal Rating</div>
+            <div class="container">
+                <label><span id="star">★</span> <input type="radio" id="1-star" name="rating" required></label>
+                <label><span id="star">★★</span> <input type="radio" id="2-star" name="rating" required></label>
+                <label><span id="star">★★★</span> <input type="radio" id="3-star" name="rating" required></label>
+                <label><span id="star">★★★★</span> <input type="radio" id="4-star" name="rating" required></label>
+                <label><span id="star">★★★★★</span> <input type="radio" id="5-star" name="rating" required></label>
+            </div>
+           
+            <div>Date of Installation</div>
+            <input type="date" name="date" id="completeDate" required>
+
+            <div id="feat">Which features did you find useful in the product?</div>
+            <div id="feat2">(Check all that apply)</div>
+            <input type="checkbox" name="feature1"> <span id="dura">Durability</span>
+            <input type="checkbox" name="feature2"> <span id="ease">Ease of Use</span>
+            <input type="checkbox" name="feature3"> <span id="performance">Performance</span>
+            <input type="checkbox" name="feature4"> <span id="design">Design</span>
+            
+            <div>Written review <span>(Optional)</span></div>
+            <textarea id="review" name="writtenreview" placeholder="Write your review here..."></textarea>
+
+            <div>
+            <label for="name">Your Name <span>(Optional)</span> <input type="text" id="username" name="user" placeholder="type your name"></label>
+            </div>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>©️ <span id="currentyear"></span> 🍋 Carina F. Tallada 🍋  Oman</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+    
+</body>
+</html>

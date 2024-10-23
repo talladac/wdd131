@@ -1,0 +1,110 @@
+:root {
+    --back-color: radial-gradient(rgb(243, 122, 243), gray);
+    --back: rgb(35, 35, 65);
+    --font-color: rgb(250, 250, 246);
+    --back-second: rgba(196, 203, 245, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    padding: 15px;
+    background: var(--back-color);
+    align-content: center;
+    justify-content: center;
+    
+}
+
+h1 {
+    
+    background: var(--back);
+    color: var(--font-color);
+    padding: 10px;
+    text-align: center;
+    max-width: 400px;
+    font-size: 30px;
+    max-width: 500px;
+    margin: 1rem auto;
+}
+
+main{
+    margin: 1rem auto;
+    max-width: 500px;
+    padding: 10px 10px;
+    background-color: var(--back-second);
+}
+
+#productid, .container, #completeDate, #design {
+    margin-bottom: 15px;
+    
+}
+
+
+.form input[type="checkbox"]{
+    display: block;
+}
+label:not(:has(input[type="radio"])) {
+    font-size: 14px; 
+    display: block; 
+    padding-top: 10px;
+    margin-left: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+.container {
+    display: flex; 
+    justify-content: space-evenly; 
+    margin-top: 10px;
+    margin-bottom: 8px;
+    width: 700px;
+    max-width: 400px;
+}
+
+label input[type="radio"]{
+    margin-left: 6px;
+}
+
+.form input[type="text"],
+.form input[type="date"],
+.form select,
+.form textarea{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fbfafa;
+    border: solid 1px #d8d6d6;
+    border-radius: 4px;
+    color: #555;
+    appearance: none;
+}
+
+.form input[type="submit"]{
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    background-image: radial-gradient(rgb(230, 48, 230), rgb(24, 9, 9)); 
+    color: #fff;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 18px;
+    box-shadow: 1px 1px 4px #cecdcd;
+    align-items: center;
+    margin: 1rem auto;
+}
+footer{
+    background: var(--back);
+    text-align: center;
+    color: var(--font-color);
+    padding: 10px;
+    font-size: 15px;
+    max-width: 500px;
+    margin: 1rem auto;
+    
+    
+}
