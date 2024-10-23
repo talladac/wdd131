@@ -16,6 +16,7 @@ body{
     max-width: 900px;
     margin: 1rem auto;
     background:var(--back-color);
+    font-family: var(--font);
 
 }
 
@@ -33,6 +34,8 @@ header{
     justify-content: center;
     border-radius: 5px;
     padding: 6px;
+
+    
     
 }
 
