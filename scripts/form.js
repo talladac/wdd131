@@ -26,6 +26,10 @@ const products = [
     }
   ];
 
+  window.onload = function(){
+    
+  }
+
 
   document.getElementById("currentyear").innerHTML = new Date().getFullYear();
   document.getElementById("lastmodified").innerHTML = document.lastModified;

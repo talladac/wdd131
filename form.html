@@ -7,6 +7,7 @@
     <title>Product Review Form | WDD 131 Dynamic Web Fundamentals | Carina F Tallada</title>
     <meta name="author" content="Carina F. Tallada">
     <meta name="description" content="Week 05 Assignment: Product Review Form ">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
     
@@ -37,12 +38,13 @@
                     <label for="rating2">&#x2605;</label>
                     <input type="radio" name="rate" id="rating1">
                     <label for="rating1">&#x2605;</label>
-                    
                </div>
             </div>
 
-            <div class="install">Date of Installation</div>
+            <fieldset>
+            <label for="">Date of Installation</label>
             <input type="date" name="date" id="date" required>
+            </fieldset>
 
             <div class="feat">Which features did you find useful in the product?<i>(Check all that apply)</i>
                 <div class="features">
@@ -63,7 +65,7 @@
                 </div>   
             </div>
 
-            <div>Written review <i>(Optional)</i></div>
+            <label for="review">Written review <i>(Optional)</i></label>
             <textarea id="review" name="writtenreview" placeholder=" Write your review here..."></textarea>
 
             <div>

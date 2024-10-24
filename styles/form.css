@@ -39,7 +39,10 @@ main{
     background-color: var(--secondary-color);
 }
 
-
+fieldset{
+    border: none;
+    padding-top: 10px;
+}
 #productname, #date, .feat, #username,
 .submit{
     margin-bottom: 15px;
@@ -47,8 +50,7 @@ main{
     padding: 5px;
 }
 
-#productname, 
-#date, 
+#productname,  
 #review, 
 #username, 
 input[type="checkbox"],
@@ -68,6 +70,7 @@ input[type="submit"]:hover{
     display: none;
     
 }
+
 
 .rating input + label{
     font-size: 30px;
