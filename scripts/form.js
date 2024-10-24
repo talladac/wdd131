@@ -27,7 +27,15 @@ const products = [
   ];
 
   window.onload = function(){
-    
+    const productSelect = document.getElementById("productname");
+
+    products.forEach(product => {
+      const option = document.createElement("option");
+      option.value = product.id;
+      option.textContent = product.name;
+      productSelect.appendChild(option);
+    });
+
   }
 
 
