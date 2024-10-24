@@ -26,26 +26,6 @@ const products = [
     }
   ];
 
-function populateProductOptions() {
-  const selectElement = document.getElementById("productid");
-
-  selectElement.innerHTML = ""; //clear option(choose a product...)
-
-  const defaultOption = document.createElement("option");
-  defaultOption.value = "";
-  defaultOption.disabled = true;
-  defaultOption.selected = true;
-  defaultOption.textContent = "Choose a Product...▼";
-  selectElement.appendChild(defaultOption);
-
-  //append product list
-  products.forEach((product) => {
-    const option = document.createElement("option");
-    option.value = product.id;
-    option.textContent = product.name;
-    selectElement.appendChild(option);
-  });
-}
 
   document.getElementById("currentyear").innerHTML = new Date().getFullYear();
   document.getElementById("lastmodified").innerHTML = document.lastModified;
