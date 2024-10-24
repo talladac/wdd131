@@ -32,11 +32,27 @@ const products = [
     products.forEach(product => {
       const option = document.createElement("option");
       option.value = product.id;
-      option.textContent = product.name;
+      option.textContent = `${product.name.replace(/\b[a-z]/g, (match) => match.toUpperCase())} (Avg Rating: ${product.averagerating} ★)`;
       productSelect.appendChild(option);
     });
 
+    const form = document.querySelector ("form");
+
+    form.addEventListener("submit", function(event) {
+      let isValid = true;
+
+      const productName = document.getElementById('productname');
+      const rating = document.querySelector('input[name="rate"]:checked');
+      const installDate = document.getElementById('date');
+
+    })
+
+    var today = new Date().toISOString().split('T') [0];
+    document.getElementById('date').setAttribute("max", today)
+
   }
+
+  
 
 
   document.getElementById("currentyear").innerHTML = new Date().getFullYear();
