@@ -13,18 +13,17 @@
     .desc{
         display: block;
         position: relative;
-        float: right;
         text-align: center;
         width: 500px;
-        bottom: 500px;
-        right: 100px;
         background-color: var(--text-bg);
         padding: 20px;
         text-align: justify;
         max-width: 100%;
-       
+        float: right;
+        bottom: 300px;
+        left: 1000px;
+      
     }
-
     nav::before{
         display: none;
     }
@@ -54,4 +53,28 @@
         grid-row: 2;
         
      }
-}
+
+     section, .h-img img, .a-img img{
+        max-width: 100%;
+     }
+     .oman-history{
+        width: 500px;
+     }
+
+     .oman img{
+        display: flex;
+        align-content: center;
+        align-items: center;
+     }
+
+     .h-sect {
+        background: rgb(241, 231, 250);;
+        max-width: 100%;
+        margin: 2rem;
+        padding: 10px;
+     }
+     .flag{
+        max-width: 100%;
+     }
+     
+    }

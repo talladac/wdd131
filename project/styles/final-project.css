@@ -112,7 +112,6 @@ nav.open::before {
 
 .d-container{
     display: grid;
-    grid-template-columns: 200px 300px;
 }
 
 .desc{
@@ -141,7 +140,7 @@ nav.open::before {
     color: rgb(4, 4, 34);
 }
 
-.history, .about, .places{
+.history, .about, .places, .trivia{
     border: 1px solid;
     text-align: center;
     padding: 5px;
@@ -186,3 +185,38 @@ nav.open::before {
 
 }
 
+
+.oman-history{
+    width: 500px;
+}
+
+.flag{
+    display: block;
+    align-content: center;
+    max-width: 100%;
+}
+.flag:hover{
+    box-shadow: 10px 10px 10px rgba(215, 230, 14, 0.8);
+}
+
+.h-sect {
+    background: rgb(233, 236, 41);;
+    max-width: 100%;
+    margin: 2rem;
+    padding: 10px;
+    color: rgb(29, 29, 49);
+ }
+
+ .citation{
+    font-size: 10px;
+ }
+
+
+ .trivia-content{
+    background: var(--secondary-color);
+    border: 1px solid;
+    margin: 5px 100px;
+    padding: 30px;
+   
+ }
+ 
