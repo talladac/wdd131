@@ -52,7 +52,24 @@ const products = [
 
   }
 
-  
+  function validate() {
+    var valid = false;
+    var x = document.form.rate;
+
+
+    for (var i=0;i<x.length;i++){
+      if(x[i].checked){
+        valid= true;
+        break;
+      }
+    }
+    if (valid){
+      submit;
+    }
+    else{
+      alert("Please rate the product")
+    }
+  }
 
 
   document.getElementById("currentyear").innerHTML = new Date().getFullYear();
