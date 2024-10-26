@@ -55,7 +55,7 @@ h2{
 }
 
 h2:hover{
-    color: var(--font);
+    color: blue;
     text-decoration: underline;
 }
 
