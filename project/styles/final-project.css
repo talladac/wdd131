@@ -1,0 +1,188 @@
+:root{
+    --back-color: radial-gradient(rgb(122, 170, 243), rgb(243, 234, 234));
+    --primary-color: rgb(58, 58, 92);
+    --secondary-color: rgb(241, 231, 250);
+    --font-color: rgb(233, 235, 96);
+    --font: Roboto;
+    --text-bg: rgba(196, 203, 245, 0.5);
+    --text-bg2: rgba(232, 165, 240, 0.5);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 1rem auto;
+}
+
+body{
+    max-width: 100rem;
+    margin: 1rem auto;
+    background:var(--back-color);
+    font-family: var(--font);
+
+}
+
+.logo img{
+    width: 7rem;
+    background-color: rgb(255, 255, 254);
+    border-radius: 5px;
+    position: absolute;
+    left: 30px;
+    top: 30px; 
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: var(--primary-color);
+    border-radius: 5px;
+    color: var(--font-color);
+    padding: 5px;
+}
+
+
+h1{
+    font-size: 40px;
+    align-content: center;
+    margin-left: 10rem;
+    
+}
+
+
+nav ul li {
+    display: none;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: rgb(233, 235, 96);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+nav a:visited{
+    color: rgb(233, 235, 96);
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    color: rgb(10, 166, 238);
+}
+
+nav a:active{
+    content: "📍";
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+
+}
+
+
+
+nav::before {
+    content: "☰";
+    color: rgb(233, 235, 96);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+nav.open::before {
+    content: "❌";
+    color: rgb(233, 235, 96);
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+.open li {
+    display: flex;
+}
+
+.hero img, section img{
+    max-width: 100%;
+}
+
+.hero img, .section1{
+    margin-left: 60px;
+    
+    
+}
+
+.d-container{
+    display: grid;
+    grid-template-columns: 200px 300px;
+}
+
+.desc{
+    display: block;
+    position: relative;
+    float: left;
+    left: 50px;
+    text-align: center;
+    background-color: var(--text-bg);
+    padding: 20px;
+    text-align: justify;
+    max-width: 100%;
+   
+}
+
+.desc, .h-text, .facts{ 
+    font-size: 1rem;
+    margin: 5px;
+    max-width: 100%;
+
+}
+
+.home{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(4, 4, 34);
+}
+
+.history, .about, .places{
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+    width: 150px;
+    font-size: 1.5rem;
+    background: rgb(253, 253, 198);
+    max-width: 100%;
+}
+
+.h-container, .a-container{
+    border: 1px solid;
+    background:var(--text-bg2);
+    text-align: justify;
+    padding: 10px;
+    max-width: 100%;
+}
+.h-text, .a-text{
+    font-size: 1rem;
+}
+
+.h-img, .a-img{
+    max-width: 100%;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+
+ .section1{
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 100%;
+}
+
+ footer{
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+

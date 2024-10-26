@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Oman Website | WDD 131: Dynamic Web Fundamentals | Carina F. Tallada</title>
+    <meta name="description" content="Discover Oman: Final Project in WDD 131">
+    <meta name="author" content="Carina F. Tallada">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-large.css">
+    <script src="scripts/final-project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Discover Oman</h1>
+        <div class="logo" >
+            <img src="images/oman-logo.webp" alt="Oman Logo" loading="lazy">
+        </div>
+        <nav class="nav">
+            <ul id="list">
+                <li id="home"><a href="#">Home</a></li>
+                <li id="old"><a href="history.html">History</a></li>
+                <li id="new"><a href="about.html">About</a></li>
+                <li id="small"><a href="places.html">Places</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="home">Home</h2>
+        <div class="d-container">
+            
+            <picture class="hero">
+                <source srcset="images/oryx-large.webp" media="(min-width: 900px)">
+                <source srcset="images/oryx-small.webp" media="(max-width: 500px)">
+                <img src="images/oryx-small.webp" alt="Oryx Oman National" loading="lazy">
+            </picture>
+            <p class="desc"><strong>Oman</strong> is a fascinating destination that combines the ancient and the modern, the natural and the cultural, in a captivating way. Explore the majestic Jabreen Castle, a masterpiece of Islamic architecture and a symbol of Oman's heritage. Discover the diverse landscapes of Oman, from the rugged mountains and deserts to the pristine coastline and lush oases. Oman is a place where you can sense the soul of Arabia, while enjoying its modern amenities and hospitality.</p>
+        </div>
+
+        <section class="section1">
+            <div class="h-container">
+            <h2 class="history">History</h2>
+            <div class="h-text">
+            <p >During the 18th century Ahmad ibn Said drove out Persian invaders and became the elected    Imam, establishing the dynasty that still rules Oman today.</p>
+
+            <p>After signing a treaty of friendship in 1798 (the first between an Arab Gulf state and   Britain), Oman and Britain developed increasingly close ties, without the Sultanate ever  becoming a colony.</p>
+
+            <p>Around the same period the Sultanate also developed relations with France and the    Netherlands creating a network of trade and cultural exchanges.</p>
+
+            <p>In 1833 Sultan Said of Oman signed a treaty of friendship and commerce with a trade  representative of the United States, opening the way to a diplomatic relationship.</p>
+            </div>
+            </div>
+            <img class="h-img" src="images/oman-mosque.webp" alt="oman-mosque" loading="lazy">
+            <p></p>
+
+            <div class="a-container">
+                <h2 class="about">About</h2>
+                <div>
+                    <ul class="facts">
+                        <li>Oman is the oldest independent state in the Arab world </li>
+                        <li>It is one of the oldest human-inhabited places on Earth</li>
+                        <li>Oman is one of the safest countries in the world</li>
+                        <li>It has five UNESCO World Heritage Sites</li>
+                        <li>Oman is a bird watcher's paradise</li>
+                        <li>The country has a hot, arid climate with high humidity along the coast</li>
+                        <li>The official language is Arabic and the currency is the Omani Rial (OMR);   third most valuable currency in the world</li>
+                    </ul>
+                </div>
+            </div>
+                <img class="a-img" src="images/Oman-mutrah.webp" alt="Oman Mutrah" loading="lazy">
+        </section> 
+
+        <section class="section2">
+            <h2 class="places">Places</h2>
+            <div class="gallery"></div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"> </span> 🍋 Carina F. Tallada 🍋 | Oman </p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+
+</body>
+
+</html>
