@@ -1,0 +1,282 @@
+:root{
+    --back-color: radial-gradient(rgb(122, 170, 243), rgb(243, 234, 234));
+    --primary-color: rgb(58, 58, 92);
+    --secondary-color: rgb(241, 231, 250);
+    --font-color: rgb(233, 235, 96);
+    --font: Roboto;
+    --text-bg: rgba(196, 203, 245, 0.5);
+    --text-bg2: rgba(232, 165, 240, 0.5);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 1rem auto;
+    max-width: 1000px;
+    
+}
+
+body{
+    
+    margin: 1rem auto;
+    background:var(--back-color);
+    font-family: var(--font);
+
+}
+
+
+.logo img{
+    width: 6rem;
+    background-color: rgb(255, 255, 254);
+    border-radius: 5px;
+    position: absolute;
+    left: 325px;
+    top: 25px; 
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: var(--primary-color);
+    border-radius: 5px;
+    color: var(--font-color);
+    padding: 5px;
+}
+
+
+h1{
+    font-size: 40px;
+    align-content: center;
+    margin-left: 10rem;
+    
+}
+
+
+nav ul li {
+    display: none;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: rgb(233, 235, 96);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+nav a:visited{
+    color: rgb(233, 235, 96);
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    color: rgb(10, 166, 238);
+}
+
+nav a:active{
+    content: "📍";
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+
+}
+
+
+
+nav::before {
+    content: "☰";
+    color: rgb(233, 235, 96);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+nav.open::before {
+    content: "❌";
+    color: rgb(233, 235, 96);
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+.open li {
+    display: flex;
+}
+
+.place{
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.place-category{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+
+.place-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.place-container::-webkit-scrollbar{
+    display: none;
+}
+
+.place-card{
+    flex: 0 0 auto;
+    margin-right: 40px;
+}
+.place-image{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-thumb{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.place-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.place-card:hover .place-btn{
+    opacity: 1;
+}
+
+.place-btn:hover{
+    background: #009688;
+    color: #fff;
+}
+.pre-btn,
+.nxt-btn{
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0)0%, #fff 100%);
+    cursor: pointer;
+    z-index: 9;
+}
+
+.pre-btn{
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn{
+    right: 0;
+}
+
+.pre-btn, .nxt-btn{
+    opacity: 0.2;
+}
+
+.pre-btn:hover, .nxt-btn:hover{
+    opacity: 1;
+}
+
+
+.collection-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.collection{
+    position: relative;
+}
+
+.collection img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.collection p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+
+}
+
+.collection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+@media screen and (min-width: 700px){
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px;
+    }
+    .desc{
+        display: block;
+        position: relative;
+        text-align: center;
+        width: 500px;
+        background-color: var(--text-bg);
+        
+        text-align: justify;
+        max-width: 100%;
+        float: right;
+        bottom: 300px;
+        left: 1000px;
+      
+    }
+    nav::before{
+        display: none;
+    }
+    nav a::after{
+        color:blue;
+    }
+
+    nav ul li{
+        display: block;
+        padding: 5px 20px;
+    }
+
+}

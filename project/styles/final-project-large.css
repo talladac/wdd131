@@ -16,7 +16,7 @@
         text-align: center;
         width: 500px;
         background-color: var(--text-bg);
-        padding: 20px;
+        
         text-align: justify;
         max-width: 100%;
         float: right;
@@ -76,5 +76,24 @@
      .flag{
         max-width: 100%;
      }
-     
+
+     .gallery {
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 500px 450px;
+        gap: 20px;
+        align-content: center;
+        align-items: center;
+        margin: 0 20rem;
+        max-width: 100%;
+
+     }
+     figcaption{
+        position: inherit;
+        align-content: center;
+        text-align: center;
+        font-size: 1rem;
+     }
+
+
     }
